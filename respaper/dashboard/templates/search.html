@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for search in search_list %}
+    {{search.name}}
+{%endfor%}
+</body>
+</html>
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +78,7 @@ div.inline { float:left; }
 </nav>
 
 <div id="wrapper" class="lead">
-    <p style="color:#fff">Natural Language Processing</p>
+    <p style="color:#fff">NLP-Thread</p>
   <div id="origin" class="origin" style="color:#fff">
     <div id="one" title="one" class="draggable inline" style="text-align:center;background-color: #000d1a; height: 50px; width: 80px; margin: 10px;  border-radius: 10px;" >  NLP 1 </div>
    <div id="two" title="two" class="draggable inline" style="text-align:center;background-color: #000d1a; height: 50px; width: 80px; margin: 10px;  border-radius: 10px" >  NLP 2 </div>
@@ -74,7 +86,7 @@ div.inline { float:left; }
     <div id="four" title="four" class="draggable inline" style="text-align:center;background-color: #000d1a; height: 50px; width: 80px; margin: 10px;  border-radius: 10px" >  NLP 4 </div>
   </div>
   </br>
-    <p style="color:#fff">Computer Vision</p>
+    <p style="color:#fff">CV-Thread</p>
   <div id="origin2" class="origin2" style="color:#fff">
       <div id="one" title="one" class="draggable inline" style="text-align:center;background-color: #000d1a; height: 50px; width: 80px; margin: 10px;  border-radius: 10px;" >  CV 1 </div>
    <div id="two" title="two" class="draggable inline" style="text-align:center;background-color: #000d1a; height: 50px; width: 80px; margin: 10px;  border-radius: 10px" > CV 2 </div>

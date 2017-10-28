@@ -19,3 +19,8 @@ def thread_index(request):
         thread_list.append(papers)
         thread_name.append(thread.name)
     return render(request,'thread_index.html',context={'thread_list': thread_list,'thread_name': thread_name})
+
+
+def search(request):
+    search_list = Threads.objects.filter(name__contains=request.POST.get("q","null"))
+    return render(request,'search.html',context={'search_list':search_list})

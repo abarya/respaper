@@ -6,4 +6,5 @@ app_name="dashboard"
 urlpatterns = [
     url(r'^$', views.home, name="home"),
     url(r'^thread_index/',views.thread_index,name="thread_index"),
+    url(r'^search/',views.search,name="search"),
 ]
